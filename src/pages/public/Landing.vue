@@ -19,19 +19,23 @@ const handleFormSubmit = (event: Event) => {
           <div class="flex flex-col items-center justify-center space-y-4 text-center">
             <div class="space-y-6 max-w-4xl">
               <h1 class="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-white">
-                NeuroFlow: Интеллектуальные веб-решения и ИИ-агенты для вашего бизнеса
+                NeuroFlow: Веб-разработка и CRM-интеграции для вашего бизнеса
               </h1>
               <p class="mx-auto max-w-[700px] text-gray-200 text-lg md:text-xl leading-relaxed">
-                От лендингов и сайтов до продвинутых чат-ботов и Kaspi ботов. Превращаем ваши идеи в реальность с помощью технологий будущего.
+                От лендингов и корпоративных сайтов до сложных интеграций с CRM. Превращаем ваши идеи в эффективные бизнес-инструменты.
               </p>
             </div>
             <div class="flex flex-col gap-4 min-[400px]:flex-row pt-6">
-              <Button size="lg" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg">
-                Рассчитать стоимость проекта
-              </Button>
-              <Button variant="outline" size="lg" class="border-white text-white hover:bg-white hover:text-purple-900 px-8 py-3 text-lg">
-                Смотреть примеры работ
-              </Button>
+              <a href="#contact">
+                <Button size="lg" class="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 text-lg">
+                  Рассчитать стоимость проекта
+                </Button>
+              </a>
+              <a href="#portfolio">
+                <Button variant="outline" size="lg" class="border-white text-white hover:bg-white hover:text-purple-900 px-8 py-3 text-lg">
+                  Смотреть примеры работ
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -74,12 +78,12 @@ const handleFormSubmit = (event: Event) => {
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
                     </svg>
                   </div>
-                  <CardTitle class="text-xl">ИИ Чат-боты</CardTitle>
+                  <CardTitle class="text-xl">Интеграция с CRM</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Разрабатываем умных чат-ботов, которые консультируют клиентов 24/7, принимают заказы и снижают нагрузку на вашу команду.
+                  Интегрируем ваш сайт с популярными CRM-системами (amoCRM, Bitrix24 и др.) для автоматизации воронок продаж и улучшения клиентского сервиса.
                 </p>
               </CardContent>
             </Card>
@@ -92,12 +96,12 @@ const handleFormSubmit = (event: Event) => {
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v4a2 2 0 01-2 2H9a2 2 0 01-2-2v-4m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"></path>
                     </svg>
                   </div>
-                  <CardTitle class="text-xl">Kaspi Bot</CardTitle>
+                  <CardTitle class="text-xl">Разработка E-commerce</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Автоматизируйте продажи и общение с клиентами через Kaspi. Наши боты умеют проверять статусы заказов, принимать оплату и многое другое.
+                  Создаем интернет-магазины с интеграцией платежных систем, управлением каталогом товаров и личным кабинетом покупателя.
                 </p>
               </CardContent>
             </Card>
@@ -110,12 +114,12 @@ const handleFormSubmit = (event: Event) => {
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
                     </svg>
                   </div>
-                  <CardTitle class="text-xl">ИИ Агенты</CardTitle>
+                  <CardTitle class="text-xl">Автоматизация бизнес-процессов</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Внедряем интеллектуальных агентов, способных анализировать данные, прогнозировать тренды и автоматизировать сложные бизнес-процессы.
+                  Разрабатываем кастомные решения для автоматизации рутинных задач, оптимизации внутренних процессов и повышения эффективности команды.
                 </p>
               </CardContent>
             </Card>
@@ -170,7 +174,7 @@ const handleFormSubmit = (event: Event) => {
                 <div class="space-y-2">
                   <h3 class="text-xl font-bold">Глубокая экспертиза</h3>
                   <p class="text-gray-600 dark:text-gray-300">
-                    Наша команда обладает опытом в разработке сложных ИИ-решений.
+                    Наша команда обладает опытом в разработке сложных веб-приложений и интеграций.
                   </p>
                 </div>
               </div>
@@ -191,55 +195,55 @@ const handleFormSubmit = (event: Event) => {
           </div>
           <div class="mx-auto grid max-w-6xl gap-8 py-12 lg:grid-cols-3">
             <Card class="overflow-hidden hover:shadow-xl transition-shadow">
-              <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
-                <div class="text-white text-2xl font-bold">TechnoDom</div>
+              <div class="h-48 bg-gradient-to-br from-green-500 to-teal-500 flex items-center justify-center">
+                <div class="text-white text-2xl font-bold">AuraMarket</div>
               </div>
               <CardHeader class="pb-4">
-                <CardTitle class="text-xl">Kaspi Bot для интернет-магазина 'TechnoDom'</CardTitle>
+                <CardTitle class="text-xl">Разработка интернет-магазина 'AuraMarket'</CardTitle>
               </CardHeader>
               <CardContent>
                 <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  Автоматизация обработки заказов и консультации клиентов. Увеличение конверсии на 40%.
+                  Разработали e-commerce платформу с каталогом товаров, онлайн-оплатой и личным кабинетом. Рост конверсии на 40%.
                 </p>
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">Kaspi API</span>
-                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">AI Chat</span>
+                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">E-commerce</span>
+                  <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 rounded-full text-sm">E-commerce</span>
                 </div>
               </CardContent>
             </Card>
             
             <Card class="overflow-hidden hover:shadow-xl transition-shadow">
-              <div class="h-48 bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center">
-                <div class="text-white text-2xl font-bold">Evolute</div>
+              <div class="h-48 bg-gradient-to-br from-sky-500 to-indigo-500 flex items-center justify-center">
+                <div class="text-white text-2xl font-bold">LogiTrack</div>
               </div>
               <CardHeader class="pb-4">
-                <CardTitle class="text-xl">Корпоративный сайт для компании 'Evolute'</CardTitle>
+                <CardTitle class="text-xl">Веб-платформа для логистической компании 'LogiTrack'</CardTitle>
               </CardHeader>
               <CardContent>
                 <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  Современный корпоративный сайт с адаптивным дизайном и системой управления контентом.
+                  Создали корпоративный сайт с личным кабинетом для отслеживания грузов и управления заказами в реальном времени.
                 </p>
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Vue.js</span>
-                  <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">CMS</span>
+                  <span class="px-3 py-1 bg-sky-100 dark:bg-sky-900 text-sky-800 dark:text-sky-200 rounded-full text-sm">Web Development</span>
+                  <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">Vue.js</span>
                 </div>
               </CardContent>
             </Card>
             
             <Card class="overflow-hidden hover:shadow-xl transition-shadow">
-              <div class="h-48 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
-                <div class="text-white text-2xl font-bold">SmartBid</div>
+              <div class="h-48 bg-gradient-to-br from-rose-500 to-fuchsia-500 flex items-center justify-center">
+                <div class="text-white text-2xl font-bold">FinPredict</div>
               </div>
               <CardHeader class="pb-4">
-                <CardTitle class="text-xl">ИИ-агент для анализа продаж 'SmartBid'</CardTitle>
+                <CardTitle class="text-xl">CRM-интеграция для 'FinPredict'</CardTitle>
               </CardHeader>
               <CardContent>
                 <p class="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  Интеллектуальная система анализа продаж и прогнозирования трендов на основе машинного обучения.
+                  Интегрировали сайт с CRM для анализа клиентских данных и автоматизации маркетинговых кампаний, что помогло повысить продажи.
                 </p>
                 <div class="flex flex-wrap gap-2">
-                  <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900 text-orange-800 dark:text-orange-200 rounded-full text-sm">Machine Learning</span>
-                  <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm">Analytics</span>
+                  <span class="px-3 py-1 bg-rose-100 dark:bg-rose-900 text-rose-800 dark:text-rose-200 rounded-full text-sm">CRM</span>
+                  <span class="px-3 py-1 bg-fuchsia-100 dark:bg-fuchsia-900 text-fuchsia-800 dark:text-fuchsia-200 rounded-full text-sm">FinTech</span>
                 </div>
               </CardContent>
             </Card>
@@ -313,9 +317,59 @@ const handleFormSubmit = (event: Event) => {
           </div>
         </div>
       </section>
+    <!-- Company Details Section -->
+      <section id="company-details" class="w-full py-16 md:py-24 lg:py-32 bg-gray-50 dark:bg-gray-900">
+        <div class="container px-4 md:px-6 mx-auto">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-4">
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Сведения о компании</h2>
+            </div>
+          </div>
+          <div class="mx-auto max-w-4xl py-12 text-gray-600 dark:text-gray-300 leading-relaxed space-y-6">
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold">Зарегистрированное название компании</h3>
+              <p>ИП Шотаев Асылхан Муратович 021116550105 NeuroFlow</p>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold">Адрес</h3>
+              <p>город Семей, массив Восточный Правый ~ №3905<br>Семей, область Абай 9700<br>Казахстан</p>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold">Телефон компании</h3>
+              <p>+77064076625</p>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold">Сайт</h3>
+              <p><a href="https://neuroflow.kz/" class="text-purple-400 hover:underline">https://neuroflow.kz/</a></p>
+            </div>
+            <div class="space-y-2">
+              <h3 class="text-xl font-semibold">Номер налогоплательщика</h3>
+              <p>021116550105</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="flex items-center justify-center w-full h-24 border-t">
-      <p class="text-gray-500 dark:text-gray-400">© 2025 NeuroFlow. Все права защищены.</p>
+    <footer class="w-full border-t bg-gray-50 dark:bg-gray-900">
+      <div class="container mx-auto py-6 px-4 md:px-6">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+          <p class="text-gray-500 dark:text-gray-400 text-sm text-center md:text-left">
+            © 2025 NeuroFlow. Все права защищены.
+          </p>
+          <nav class="flex gap-4 sm:gap-6 mt-4 md:mt-0">
+            <a href="/privacy" class="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
+              Политика конфиденциальности
+            </a>
+            <a href="/agreement" class="text-sm text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
+              Пользовательское соглашение
+            </a>
+          </nav>
+        </div>
+        <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 text-center md:text-left text-sm text-gray-500 dark:text-gray-400">
+          <p><strong>Адрес:</strong> ОБЛАСТЬ АБАЙ, СЕМЕЙ Г.А., Г.СЕМЕЙ, МАССИВ Восточный Правый, 3905, 071400</p>
+          <p><strong>Телефон:</strong> +77064076625</p>
+        </div>
+      </div>
     </footer>
   </div>
 </template>

@@ -1,0 +1,12 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: neuroflow-landing
+    restart: unless-stopped
+    networks:
+      - neuroflow
+networks:
+  neuroflow:
+    external: true

@@ -12,5 +12,13 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
+  },
+  server: {
+    hmr: {
+      protocol: 'ws',
+      host: 'localhost'
+    },
+    // Добавляем разрешенный хост
+    allowedHosts: ['neuroflow.kz']
   }
 })
