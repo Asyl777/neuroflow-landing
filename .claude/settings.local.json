@@ -4,7 +4,12 @@
       "Bash(npm run dev:*)",
       "Bash(npm install:*)",
       "Bash(pkill:*)",
-      "Bash(npx tailwindcss:*)"
+      "Bash(npx tailwindcss:*)",
+      "Bash(git pull:*)",
+      "Bash(git checkout:*)",
+      "Bash(rm:*)",
+      "Bash(git reset:*)",
+      "Bash(mkdir:*)"
     ],
     "deny": []
   }

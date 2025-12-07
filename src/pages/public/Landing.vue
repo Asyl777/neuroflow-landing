@@ -11,18 +11,12 @@ const handleFormSubmit = (event: Event) => {
 }
 
 const crmSystems = [
-  { name: 'AmoCRM', color: '#339DC9' },
-  { name: 'Bitrix24', color: '#00AEEF' },
-  { name: 'MacDent', color: '#4CAF50' },
-  { name: 'DentisPlus', color: '#7C4DFF' },
-  { name: 'Ident', color: '#FF6B35' },
-  { name: '1C', color: '#FFD700' },
-  { name: 'Salesforce', color: '#00A1E0' },
-  { name: 'HubSpot', color: '#FF7A59' },
-  { name: 'Мегаплан', color: '#4DB6AC' },
-  { name: 'RetailCRM', color: '#E91E63' },
-  { name: 'Zoho CRM', color: '#D32F2F' },
-  { name: 'Pipedrive', color: '#21A366' },
+  { name: 'AmoCRM', color: '#339DC9', icon: '/icons/crm/амосрм.png' },
+  { name: 'Bitrix24', color: '#00AEEF', icon: '/icons/crm/битрикс.png' },
+  { name: 'MacDent', color: '#4CAF50', icon: '/icons/crm/macdent.jpg' },
+  { name: 'DentisPlus', color: '#7C4DFF', icon: '/icons/crm/дентис плюс.webp' },
+  { name: 'Ident', color: '#FF6B35', icon: '/icons/crm/ident.png' },
+  { name: '1C', color: '#FFD700', icon: '/icons/crm/1с.webp' },
 ]
 
 // Parallax and scroll animations
@@ -337,7 +331,7 @@ onUnmounted(() => {
 
           <!-- CRM Grid with hover effects -->
           <div
-            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto mb-20"
+            class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto mb-12"
             data-animate="crm-grid"
             :class="isVisible['crm-grid'] ? 'animate-fade-in-up' : 'opacity-0'"
           >
@@ -349,18 +343,24 @@ onUnmounted(() => {
             >
               <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" :style="{ background: `radial-gradient(circle at center, ${crm.color}20, transparent)` }"></div>
               <div
-                class="relative w-16 h-16 rounded-xl flex items-center justify-center mb-3 transition-all duration-300 group-hover:scale-110"
+                class="relative w-16 h-16 rounded-xl flex items-center justify-center mb-3 transition-all duration-300 group-hover:scale-110 overflow-hidden"
                 :style="{ backgroundColor: crm.color + '20' }"
               >
-                <span
-                  class="text-3xl font-bold transition-all duration-300"
-                  :style="{ color: crm.color }"
-                >
-                  {{ crm.name.charAt(0) }}
-                </span>
+                <img
+                  :src="crm.icon"
+                  :alt="crm.name"
+                  class="w-10 h-10 object-contain"
+                />
               </div>
               <span class="relative text-white font-medium text-center">{{ crm.name }}</span>
             </div>
+          </div>
+
+          <!-- Any CRM message -->
+          <div class="text-center mb-20">
+            <p class="text-gray-400 text-lg">
+              ...и это только часть! <span class="text-white font-semibold">Интегрируем с любой CRM-системой</span> по вашему запросу
+            </p>
           </div>
 
           <!-- Benefits -->
