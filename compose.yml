@@ -5,8 +5,11 @@ services:
       dockerfile: Dockerfile
     container_name: neuroflow-landing
     restart: unless-stopped
+    expose:
+      - "4000"
     networks:
       - neuroflow
+
 networks:
   neuroflow:
     external: true
